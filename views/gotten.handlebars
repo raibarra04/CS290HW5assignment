@@ -1,0 +1,14 @@
+<h1>GET Request received</h1>
+<table style="border: solid 2px black;">
+    <tr style="border: solid 2px black;">
+        <th style="border: solid 2px black;">key:</th>
+        <th style="border: solid 2px black;">value:</th>
+    </tr>
+    {{#each items}}
+    <tr style="border: solid 2px black;">
+        <td style="border: solid 2px black;">{{this.name}}</td>
+        <td style="border: solid 2px black;">{{this.value}}</td>
+    </tr>
+    {{/each}}
+
+</table>

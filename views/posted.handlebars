@@ -1,0 +1,28 @@
+<h1>POST Request received</h1>
+<table>
+    <tr>
+        <th>key:</th>
+        <th>value:</th>
+    </tr>
+    {{#each items}}
+    <tr>
+        <td>{{this.name}}</td>
+        <td>{{this.value}}</td>
+    </tr>
+    {{/each}}
+
+</table>
+
+<table>
+    <tr>
+        <th>key:</th>
+        <th>value:</th>
+    </tr>
+    {{#each keyValue}}
+    <tr>
+        <td>{{this.key}}</td>
+        <td>{{this.pair}}</td>
+    </tr>
+    {{/each}}
+
+</table>
