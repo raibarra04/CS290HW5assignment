@@ -49,25 +49,11 @@ app.post("/", function (req, res) {
   for (var j in req.body) {
     keyValue.push({ key: j, pair: req.body[j] });
   }
-
   // creating another key for our array of objects in context
   context.keyValue = keyValue;
   // sending context object to posted handlebars file
   res.render("posted", context);
 });
-
-// app.post("/", function (req, res) {
-//   var keyValue = [];
-//   for (var i in req.body) {
-//     keyValue.push({ name: i, value: req.query[i] });
-//   }
-//   console.log(keyValue);
-//   console.log(req.body);
-
-//   var content = {};
-//   content.keyValue = keyValue;
-//   res.render("posted", content);
-// });
 
 app.use(function (req, res) {
   res.status(404);
